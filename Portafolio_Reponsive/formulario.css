@@ -1,0 +1,132 @@
+
+*, html, body {
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --fuente:'Quicksand', sans-serif;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container img{
+    position: absolute;
+    top:200px;
+    left: 400px;
+    width: 23%;
+    object-fit: cover;
+}
+.container {
+    width: 50vw;
+    height: 87vh;
+    display: grid;
+    grid-template-columns: 100%;
+    box-shadow: 0 0 17px 10px rgb(0 0 0 / 30%);
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.507);
+    overflow: hidden;
+}
+.rotate-45 {
+    transform: rotate(-45deg);
+}
+
+
+.login {
+    grid-area: login;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    right: 25px;
+}
+
+
+
+@media (min-width: 768px) {
+    .container {
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "design login";
+    }
+
+    .design {
+        display: block;
+    }
+}
+
+.formulario{
+    padding: 40px;
+    border-radius: 10px;
+}
+.texto-formulario h2, .input label, .password-olvidada a, .texto-formulario p{
+    color: #080101;
+    font-family: serif;
+}
+
+.texto-formulario h2{
+    font-size: 30px;
+    text-align: center;
+}
+
+.input label{
+    display: block;
+    font-size: 10px;
+    font-weight: bold;
+    margin: 50px 2px;
+}
+
+.input input{
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 5px;
+    outline: none;
+     margin-bottom: 10px;
+     
+}
+.inpu_boton{
+    text-align: center;
+}
+.boton[type="submit"]{
+    background-color: #ff0000;
+    color: #f1f3f5;
+    font-weight: bold;
+    border: none;
+    margin-top: 20px;
+    transition: background-color .1s ease-in-out;
+    border-radius: 2px;
+}
+.boton[type="submit"]:hover{
+    cursor: pointer;
+    background-color: #051e8ff1;
+    
+}
+.boton a{
+    font-size: 14px;
+}
+.terminos {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 5px;
+    
+  }
+
+  input[type="text"],
+  input[type="password"]{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}

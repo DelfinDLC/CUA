@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula Virtual</title>
+    
+    <link rel="stylesheet" href="formulario.css">
+</head>
+
+<body>
+    
+    <div class="container">
+            
+        <img src="Logo-VG.png" class="main_img">
+        
+        <div class="design">
+            
+            <div class="pill-1 rotate-45"></div>
+            <div class="pill-2 rotate-45"></div>
+            <div class="pill-3 rotate-45"></div>
+            <div class="pill-4 rotate-45"></div>
+        </div>
+       
+        <div class="login">
+            <form class="formulario">
+                <div class="texto-formulario">
+                    <h2>Bienvenido</h2>
+                </div>
+                <div class="contaniner">
+                    <input type="radio" id="sistemas" name="opciones">
+                    <label for="sistemas">Analisis de Sistemas</label>
+                    <input type="radio" id="agraria" name="opciones">
+                    <label for="agraria">Agraria</label>
+                </div>
+                <div class="input">
+                    <input placeholder="Apellidos y Nombre" type="text" id="apellidos_nombres">
+                    <input placeholder="Numero de DNI" type="text" id="dni">
+                    <input placeholder="dd/mm/aaaa" type="text" id="fecha_nacimiento">
+                    <input placeholder="Correo Institucional" type="email" id="correo_institucional">
+                    
+                </div>
+                <div class="input">
+                    <input placeholder="Contraseña" type="password" id="contrasena">
+                </div>
+                <center><div class="password-olvidada">
+                   <a href="#">¿Olvidaste tu contraseña?</a>
+                </div></center>
+            
+                <div class="terminos">
+                    <input type="checkbox" id="aceptar" name="aceptar" required>
+                    <label for="aceptar">Aceptar la politica de privacidad de los terminos y condiciones</label>
+                  </div>
+                   
+                 <CENTER> <div class="input_boton">
+                    <button class="boton" id="btnCrear" type="submit" ><a>Registrarme</a></button>
+                </div>
+            </CENTER>
+            </form>
+    </div>
+    
+
+</body>
+
+</html>
